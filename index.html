@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+       
+    </style>
+</head>
+<body>
+     <section class="home" id="home">
+        <h1>Canon</h1>
+        <p class="tagline">Delighting You Always</p>
+        <p>Canon is a leading global brand known for its high-quality imaging and optical products, including cameras, camcorders, and printers. With a strong emphasis on innovation, Canon has consistently delivered advanced technologies, such as Dual Pixel Autofocus and high-resolution sensors, making it a preferred choice for both professionals and enthusiasts in the photography and imaging industries.</p>
+    </section>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+    </header>
+    
+    <div class="column-container">
+        <div class="video-container1">
+            <video  autoplay muted loop src="11931264_2160_3840_25fps.mp4" width="400" height="700"></video>
+        </div>
+        <div class="video-container2">
+            <video   autoplay  muted loop src="13589137-hd_1080_1920_60fps.mp4" width="400" height="700"></video>
+        </div>
+        <div class="video-container3">
+            <video  autoplay muted loop src="5642531-hd_1080_1920_25fps.mp4"  width="400 "height="700"></video>
+        </div>
+        
+    </div>
+
+    
+    <section>
+        
+        <div class="container" id="features">
+            <img src="dual.jpg" alt="Dual Pixel Autofocus" class="image">
+            <div id="box1">
+                <header class="section-header" id="features">FEATURES</header>
+                <h1>Dual Pixel Autofocus</h1>
+                <p>Dual Pixel Autofocus is a Canon technology used in many of their DSLR and mirrorless cameras. It provides fast and accurate autofocus by using phase-detection pixels on the sensor itself. This is especially useful for video recording and live view shooting, as it allows for smooth and precise focusing with minimal lag.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section>
+        <div class="container">
+            <img src="Focal-length-mountain-through-lens.jpg" alt="" class="image">
+            <div id="box2">
+                <h1>Lens Quality and Focal Length</h1>
+                <p>The lens quality and focal length determine how well the camera can capture images. A higher-quality lens offers better sharpness, contrast, and color accuracy. Focal length, measured in millimeters (mm), affects the camera's zoom capability and field of view. Wide-angle lenses are good for landscapes, while telephoto lenses are suited for distant subjects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img src="reciprocity-law-aperture-shutter-speed-trade-offs-629x1024.jpg" alt="" class="image">
+            <div id="box3">
+                <h1>Shutter Speed and Aperture</h1>
+                <p>Shutter speed controls how long the camera's sensor is exposed to light, affecting motion blur and exposure. Faster shutter speeds freeze motion, while slower speeds can create motion blur. Aperture, represented by f-stop numbers (e.g., f/2.8, f/5.6), controls the amount of light entering the lens and the depth of field. A lower f-stop number allows more light and a shallower depth of field, while a higher number results in less light and a greater depth of field.</p>
+            </div>
+        </div>
+        <header class="section-header">PRICING</header>
+    </section>
+    <div class="container" id="pricing">
+        <div class="price-row">
+            <div class="price-col">
+                <p> Basic</p>
+                <h3>199$</h3>
+                <ul>
+                    <li>No warranty </li>
+                    <li>No Access to cloud storage</li>
+                    <li>SD card not provided</li>
+                </ul>
+                <button> Add to cart</button>
+            </div>
+            <div class="price-col">
+                <p> Standard</p>
+                <h3>299$</h3>
+                <ul>
+                    <li>6 months warranty </li>
+                    <li>Access to cloud storage</li>
+                    <li>SD card not provided</li>
+                </ul>
+                <button> Add to cart</button>
+            </div>
+            <div class="price-col">
+                <p> Advanced</p>
+                <h3>499$</h3>
+                <ul>
+                    <li>5 years warranty </li>
+                    <li>Access to cloud storage</li>
+                    <li>SD card provided</li>
+                </ul>
+                <button> Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="footer-content" id="contact">
+            <div class="social-media">
+                <a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=canon+facebook" target="_blank">Facebook</a>
+                <a href="https://x.com/Canon_India/" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/canonindia_official/?hl=en" target="_blank">Instagram</a>
+              
+            </div>
+            <div class="newsletter">
+                <h2>Subscribe to our Newsletter</h2>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="company-info">
+                <p>&copy; 2024 Camera Inc. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+   
+    <button id="backToTop">Back to Top</button>
+
+    <script>
+       
+        window.onscroll = function() {
+            const backToTopBtn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        document.getElementById("backToTop").onclick = function() {
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</body>
+</html>
